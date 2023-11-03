@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 void key_euro(int num[], int star[]) {
     int i;
@@ -22,14 +22,14 @@ int main() {
 
     key_euro(num, star);
 
-    printf("Números: ");
+    std::cout << "Números: ";
     for (i = 0; i < 5; i++) {
-        printf("%d ", num[i]);
+        std::cout << num[i] << " ";
     }
 
-    printf("\nEstrela: ");
+    std::cout << "\nEstrela: ";
     for (i = 0; i < 2; i++) {
-        printf("%d ", star[i]);
+        std::cout << star[i] << " ";
     }
 
     return 0;
