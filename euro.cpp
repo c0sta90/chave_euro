@@ -19,18 +19,24 @@ int main() {
     int num[5];
     int star[2];
     int i;
+    char response;
 
-    key_euro(num, star);
+    do {
+        key_euro(num, star);
 
-    std::cout << "Números: ";
-    for (i = 0; i < 5; i++) {
-        std::cout << num[i] << " ";
-    }
+        std::cout << "Números: ";
+        for (i = 0; i < 5; i++) {
+            std::cout << num[i] << " ";
+        }
 
-    std::cout << "\nEstrela: ";
-    for (i = 0; i < 2; i++) {
-        std::cout << star[i] << " ";
-    }
+        std::cout << "\nEstrela: ";
+        for (i = 0; i < 2; i++) {
+            std::cout << star[i] << " ";
+        }
+
+        std::cout << "\nDeseja uma nova chave? (S/N): ";
+        std::cin >> response;
+    } while (response == 'S' || response == 's');
 
     return 0;
 }
